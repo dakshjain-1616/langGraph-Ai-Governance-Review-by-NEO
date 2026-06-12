@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" font-family="'Segoe UI', system-ui, -apple-system, sans-serif">
+  <defs>
+    <linearGradient id="wbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1120"/>
+      <stop offset="1" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#06b6d4"/><stop offset="1" stop-color="#0891b2"/>
+    </linearGradient>
+    <linearGradient id="indigo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6366f1"/><stop offset="1" stop-color="#4f46e5"/>
+    </linearGradient>
+    <linearGradient id="violet" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a855f7"/><stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="pink" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ec4899"/><stop offset="1" stop-color="#db2777"/>
+    </linearGradient>
+    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#e879f9"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#818cf8"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="420" fill="url(#wbg)"/>
+  <text x="600" y="48" fill="#e2e8f0" font-size="24" font-weight="800" text-anchor="middle" letter-spacing="0.5">How the workflow fits together</text>
+  <text x="600" y="76" fill="#94a3b8" font-size="15" text-anchor="middle">Claude Code orchestrates · Neo executes · you verify &amp; ship</text>
+
+  <!-- connecting flow line -->
+  <path d="M150 230 H1050" stroke="url(#flow)" stroke-width="3" stroke-dasharray="2 8" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Step 1: Prompt -->
+  <g>
+    <rect x="70" y="150" width="200" height="160" rx="18" fill="#111827" stroke="url(#cyan)" stroke-width="2"/>
+    <circle cx="170" cy="190" r="26" fill="url(#cyan)"/>
+    <text x="170" y="198" fill="#06283b" font-size="24" font-weight="800" text-anchor="middle">1</text>
+    <text x="170" y="246" fill="#e2e8f0" font-size="18" font-weight="700" text-anchor="middle">One Prompt</text>
+    <text x="170" y="272" fill="#94a3b8" font-size="13" text-anchor="middle">"Audit this repo</text>
+    <text x="170" y="290" fill="#94a3b8" font-size="13" text-anchor="middle">for AI governance"</text>
+  </g>
+  <line x1="270" y1="230" x2="330" y2="230" stroke="#818cf8" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Step 2: Claude Code orchestrates -->
+  <g>
+    <rect x="330" y="150" width="200" height="160" rx="18" fill="#111827" stroke="url(#indigo)" stroke-width="2"/>
+    <circle cx="430" cy="190" r="26" fill="url(#indigo)"/>
+    <text x="430" y="198" fill="#1e1b4b" font-size="24" font-weight="800" text-anchor="middle">2</text>
+    <text x="430" y="246" fill="#e2e8f0" font-size="17" font-weight="700" text-anchor="middle">Claude Code</text>
+    <text x="430" y="268" fill="#a5b4fc" font-size="12" font-weight="600" text-anchor="middle">ORCHESTRATES</text>
+    <text x="430" y="290" fill="#94a3b8" font-size="12" text-anchor="middle">frames &amp; dispatches task</text>
+  </g>
+  <line x1="530" y1="230" x2="590" y2="230" stroke="#818cf8" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Step 3: Neo executes -->
+  <g>
+    <rect x="590" y="150" width="200" height="160" rx="18" fill="#111827" stroke="url(#violet)" stroke-width="2"/>
+    <circle cx="690" cy="190" r="26" fill="url(#violet)"/>
+    <text x="690" y="198" fill="#2e1065" font-size="24" font-weight="800" text-anchor="middle">3</text>
+    <text x="690" y="246" fill="#e2e8f0" font-size="17" font-weight="700" text-anchor="middle">Neo MCP</text>
+    <text x="690" y="268" fill="#c4b5fd" font-size="12" font-weight="600" text-anchor="middle">EXECUTES (LOCAL)</text>
+    <text x="690" y="290" fill="#94a3b8" font-size="12" text-anchor="middle">explores code · writes report</text>
+  </g>
+  <line x1="790" y1="230" x2="850" y2="230" stroke="#818cf8" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Step 4: Verify & ship -->
+  <g>
+    <rect x="850" y="150" width="200" height="160" rx="18" fill="#111827" stroke="url(#pink)" stroke-width="2"/>
+    <circle cx="950" cy="190" r="26" fill="url(#pink)"/>
+    <path d="M940 190 l7 7 l13 -14" stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="950" y="246" fill="#e2e8f0" font-size="17" font-weight="700" text-anchor="middle">Verify &amp; Ship</text>
+    <text x="950" y="268" fill="#f9a8d4" font-size="12" font-weight="600" text-anchor="middle">GROUND-TRUTH CHECK</text>
+    <text x="950" y="290" fill="#94a3b8" font-size="12" text-anchor="middle">confirm · commit</text>
+  </g>
+
+  <!-- bottom labels -->
+  <g font-size="12" fill="#64748b" text-anchor="middle">
+    <text x="170" y="356">input</text>
+    <text x="430" y="356">brain</text>
+    <text x="690" y="356">muscle</text>
+    <text x="950" y="356">trust</text>
+  </g>
+
+  <!-- output artifact pill -->
+  <g>
+    <rect x="455" y="378" width="290" height="30" rx="15" fill="#0f172a" stroke="#334155"/>
+    <circle cx="478" cy="393" r="5" fill="#22d3ee"/>
+    <text x="600" y="397" fill="#cbd5e1" font-size="13" font-weight="600" text-anchor="middle" font-family="monospace">→ AI_GOVERNANCE_AUDIT.md</text>
+  </g>
+</svg>
