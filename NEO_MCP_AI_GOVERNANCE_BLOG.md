@@ -4,7 +4,7 @@
 
 # We Asked Claude Code to Audit a Repo for AI Governance Risk — and It Used Neo MCP to Do It in One Go
 
-> Sitting in Claude Code, we typed one request: *"audit this repo for AI governance risk."* Claude reached for its installed Neo MCP, handed off the heavy lifting, and minutes later we had a 724-line, board-ready report in the repo — every finding tied to an actual file.
+> Sitting in Claude Code, we typed one request: *"audit this repo for AI governance risk. using NEO"* Claude reached for its installed Neo MCP, handed off the heavy lifting, and minutes later we had a 724-line, board-ready report in the repo — every finding tied to an actual file.
 
 *A walkthrough from inside the Claude Code session: what we asked, how Claude used Neo, what came back, and how you can wire up the same setup.*
 
@@ -15,7 +15,7 @@
 ## TL;DR
 
 - We worked entirely **inside Claude Code** — the editor/agent you already know.
-- We asked Claude to **audit the repo for AI governance risk**. Claude dispatched the deep work to **Neo through its installed MCP**.
+- We asked Claude to **audit the repo for AI governance risk**. Claude dispatched the deep work to **Neo through its installed and configured MCP**.
 - Neo explored the codebase on its own — serializers, checkpointers, CI/CD, dependency config — and wrote a **12-section, evidence-based report**.
 - Every finding points to a **real file path**, not a vibe.
 - The division of labor that makes it reliable: **Claude Code orchestrates and verifies; Neo executes.**
