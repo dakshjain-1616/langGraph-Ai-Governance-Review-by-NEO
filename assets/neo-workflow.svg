@@ -31,14 +31,14 @@
   <!-- connecting flow line -->
   <path d="M150 230 H1050" stroke="url(#flow)" stroke-width="3" stroke-dasharray="2 8" stroke-linecap="round" opacity="0.6"/>
 
-  <!-- Step 1: Prompt -->
+  <!-- Step 1: You ask in Claude Code -->
   <g>
     <rect x="70" y="150" width="200" height="160" rx="18" fill="#111827" stroke="url(#cyan)" stroke-width="2"/>
     <circle cx="170" cy="190" r="26" fill="url(#cyan)"/>
     <text x="170" y="198" fill="#06283b" font-size="24" font-weight="800" text-anchor="middle">1</text>
-    <text x="170" y="246" fill="#e2e8f0" font-size="18" font-weight="700" text-anchor="middle">One Prompt</text>
-    <text x="170" y="272" fill="#94a3b8" font-size="13" text-anchor="middle">"Audit this repo</text>
-    <text x="170" y="290" fill="#94a3b8" font-size="13" text-anchor="middle">for AI governance"</text>
+    <text x="170" y="246" fill="#e2e8f0" font-size="18" font-weight="700" text-anchor="middle">You Ask</text>
+    <text x="170" y="268" fill="#67e8f9" font-size="12" font-weight="600" text-anchor="middle">IN CLAUDE CODE</text>
+    <text x="170" y="290" fill="#94a3b8" font-size="12" text-anchor="middle">"audit this repo"</text>
   </g>
   <line x1="270" y1="230" x2="330" y2="230" stroke="#818cf8" stroke-width="2.5" marker-end="url(#arrow)"/>
 
